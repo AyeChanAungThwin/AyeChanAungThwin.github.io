@@ -17,7 +17,7 @@
     --clr-text: #dba634;
     --clr-yellow: #dba634;
     --clr-yellow: #dba634;
-    --clr-grey: rgb(59, 65, 62);
+    --clr-grey: rgb(44, 46, 45);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -470,10 +470,18 @@ header {
 .portfolio {
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    counter-reset: item;
 }
+
+.portfolio-item::before {
+    counter-increment: item;
+    content: counter(item) ". ";
+}
+
 
 .portfolio .portfolio-item {
     display: block;
+    color: aqua;
 }
 
 /* .portfolio__item {
