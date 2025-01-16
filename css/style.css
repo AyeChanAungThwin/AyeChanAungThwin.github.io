@@ -331,9 +331,43 @@ header {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -1.5em;
+        left: -1.25em;
         width: calc(100% + 3em);
         padding-right: 1.5em;
+    }
+}
+
+.section__subtitle--age {
+    display: inline-block;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .section__subtitle--age {
+        align-self: start;
+        grid-column: 1/-1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -5.75em;
+        bottom: 2.25em;
+        width: calc(100% + 3em);
+        padding-right: 1.5em;
+    }
+}
+
+@media (min-width: 800px) {
+    .section__subtitle--age {
+        align-self: start;
+        grid-column: 1/-1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -15.5em;
+        bottom: 1.5em;
+        width: calc(100% + 3em);
+        padding-right: 1.5em;
+        font-size: 15px;
     }
 }
 
