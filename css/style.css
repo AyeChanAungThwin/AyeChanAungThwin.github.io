@@ -608,14 +608,32 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 2em 0 0 0;
     padding: 0;
+    gap: 1em;
 }
 
 .social-list__item {
-    margin: 0 .5em;
+    margin: 0;
 }
 
 .social-list__link {
-    padding: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--clr-yellow);
+    color: var(--clr-yellow);
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.social-list__link:hover {
+    background: var(--clr-yellow);
+    color: var(--clr-grey);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(219, 166, 52, 0.4);
 }
