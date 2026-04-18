@@ -576,6 +576,36 @@ header {
     opacity: .75;
 } */
 
+.portfolio-item--copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.copy-btn {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    border: 2px solid var(--clr-yellow);
+    padding: 0.3em 0.8em;
+    font-size: 0.8em;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: inherit;
+    font-weight: bold;
+    transition: background 150ms ease, color 150ms ease;
+}
+
+.copy-btn:hover {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.copy-btn:active {
+    transform: scale(0.95);
+}
+
 /* footer */
 
 .footer {
